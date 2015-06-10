@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css3幻灯片</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="slider">
+	<!-- 修改view，转换成template(关键字替换)，增加template ID -->
+		<div class="main" id="template_main">
+			<div class="main-i {{css}}" id="main_{{index}}" >
+				<div class="caption">
+					<h2>{{h2}}</h2>
+					<h3>{{h3}}</h3>
+				</div>
+				<img class="picture" src="images/{{index}}.jpg">
+			</div>
+		</div>
+		<div class="ctrl" id="template_ctrl">
+			<a href="javascript:switchSlider({{index}});" class="ctrl-i " id="ctrl_{{index}}"><img src="images/{{index}}.jpg"></a>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
