@@ -23,7 +23,7 @@ body{
 	width: 100%;
 	position: absolute;
 	left: 0;
-	top: 50%;
+	bottom: -20%;
 	z-index: 1;
 }
 .main .main-i .caption{

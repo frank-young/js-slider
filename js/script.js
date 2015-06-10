@@ -69,18 +69,18 @@ function switchSlider(n){
 	},1000)
 }
 //动态调整图片的margin-top 时期垂直居中
-function movePictures(){
-	var pictures = g('.picture');
-	for(var i=0;i<pictures.length;i++){
-		pictures[i].style.marginTop = (-1*pictures[i].clientHeight/2)+'px';
-	}
-}
+// function movePictures(){
+// 	var pictures = g('.picture');
+// 	for(var i=0;i<pictures.length;i++){
+// 		pictures[i].style.marginTop = (-1*pictures[i].clientHeight/2)+'px';
+// 	}
+// }
 
 // 定义合适处理幻灯片输出
 window.onload = function(){
 	addSliders();
 	switchSlider(1);
-	setTimeout(function(){
-		movePictures();
-	},100)
+	// setTimeout(function(){
+	// 	movePictures();
+	// },100)
 }
